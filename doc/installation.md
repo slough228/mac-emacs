@@ -103,12 +103,12 @@ By default most of the modules that ship with Prelude are not loaded. For more i
 (require 'prelude-lisp)
 (require 'prelude-org)
 (require 'prelude-perl)
-;; (require 'prelude-python)
+(require 'prelude-python)
 ;; (require 'prelude-ruby)
 ;; (require 'prelude-scala)
 (require 'prelude-scheme)
 ;; (require 'prelude-scss)
-;; (require 'prelude-web)
+(require 'prelude-web)
 (require 'prelude-xml)
 ```
 

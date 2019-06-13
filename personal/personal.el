@@ -37,6 +37,8 @@
     flymd
     treemacs
     ox-gfm
+    company-go
+    all-the-icons
     ))
 
 (mapc #'(lambda (package)
@@ -86,6 +88,7 @@
 
 (add-hook 'find-file-hook 'my-find-file-check-make-large-file-read-only-hook)
 
+(prelude-swap-meta-and-super)
 
 ;; no scroll bar
 (scroll-bar-mode 0)

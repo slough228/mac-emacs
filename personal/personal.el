@@ -39,6 +39,7 @@
     ox-gfm
     company-go
     all-the-icons
+    all-the-icons-dired
     ))
 
 (mapc #'(lambda (package)

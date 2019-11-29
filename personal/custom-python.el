@@ -3,16 +3,19 @@
 
 ;; (setq elpy-rpc-python-command "python3")
 
-;; (setq python-shell-interpreter "jupyter"
-;;       python-shell-interpreter-args "console --simple-prompt"
-;;       python-shell-prompt-detect-failure-warning nil)
-;; (add-to-list 'python-shell-completion-native-disabled-interpreters
+;;(setq python-shell-interpreter "jupyter"
+;;      python-shell-interpreter-args "console --simple-prompt"
+;;      python-shell-prompt-detect-failure-warning nil)
+;;(add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;             "jupyter")
 
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "--simple-prompt -i")
+
 ;; current hack is forcing ipython to 4.2.1.  it is the ONLY solution for multiline edits in python interpreter buffer
-;; (setq python-shell-interpreter "ipython")
+;;(setq python-shell-interpreter "ipython")
 ;; (setq python-shell-interpreter-args "")
-(setq python-shell-interpreter "ipython" python-shell-interpreter-args "--simple-prompt -i")
+;; (setq python-shell-interpreter "ipython" python-shell-interpreter-args "--simple-prompt -i")
 ;; (add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;              "jupyter")
 

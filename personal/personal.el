@@ -40,6 +40,7 @@
     company-go
     all-the-icons
     all-the-icons-dired
+    evil-numbers
     ))
 
 (mapc #'(lambda (package)
@@ -93,3 +94,12 @@
 
 ;; no scroll bar
 (scroll-bar-mode 0)
+
+;; backups
+(setq backup-directory-alist '(("." . "~/saves")))
+
+;; Emacs-org-issues
+(add-to-list 'load-path "~/local-emacs-packages/Emacs-org-issues-mode/src")
+
+(require 'org-issues-mode)
+(org-issues-update/monitor-issues) ;; Sets up a timer to automatically keep your local Issues up-to-date

@@ -9,8 +9,11 @@
 ;;(add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;             "jupyter")
 
-(setq python-shell-interpreter "ipython"
-      python-shell-interpreter-args "--simple-prompt -i")
+;;(setq python-shell-interpreter "ipython"
+;;      python-shell-interpreter-args "--simple-prompt -i")
+
+(setq python-shell-interpreter "python"
+      python-shell-interpreter-args "-i")
 
 ;; current hack is forcing ipython to 4.2.1.  it is the ONLY solution for multiline edits in python interpreter buffer
 ;;(setq python-shell-interpreter "ipython")
@@ -18,7 +21,6 @@
 ;; (setq python-shell-interpreter "ipython" python-shell-interpreter-args "--simple-prompt -i")
 ;; (add-to-list 'python-shell-completion-native-disabled-interpreters
 ;;              "jupyter")
-
 
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)

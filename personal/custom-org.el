@@ -66,3 +66,8 @@
 ;; To save the clock history across Emacs sessions, use
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
+
+;; ORG JOURNAL https://github.com/bastibe/org-journal
+(customize-set-variable 'org-journal-dir "~/org/journal/")
+(customize-set-variable 'org-journal-date-format "%A, %d %B %Y")
+(require 'org-journal)

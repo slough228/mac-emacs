@@ -3,15 +3,15 @@
 (require 'prelude-helm)
 (require 'prelude-company)
 (require 'prelude-helm-everywhere)
-(require 'prelude-go)
-(require 'prelude-c)
+;;(require 'prelude-go)
+;;(require 'prelude-c)
 (require 'prelude-python)
 (require 'prelude-shell)
 (require 'prelude-web)
-(require 'prelude-js)
-(require 'prelude-ruby)
+;;(require 'prelude-js)
+;;(require 'prelude-ruby)
 (require 'prelude-macos)
-(require 'prelude-clojure)
+;;(require 'prelude-clojure)
 
 ;; yasnippet
 (require 'yasnippet)
@@ -41,6 +41,11 @@
     all-the-icons
     all-the-icons-dired
     evil-numbers
+    elm-mode
+    flycheck-elm
+    eclim
+    company-emacs-eclim
+    org-journal
     ))
 
 (mapc #'(lambda (package)
@@ -52,7 +57,7 @@
 ;; make tab complete files
 (define-key helm-find-files-map "\t" 'helm-execute-persistent-action)
 
-;; mouse zoom
+;; Mouse zoom
 (global-set-key [C-wheel-up]  'text-scale-increase)
 (global-set-key  [C-wheel-down] 'text-scale-decrease)
 

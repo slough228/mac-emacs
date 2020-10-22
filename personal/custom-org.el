@@ -53,7 +53,7 @@
 
 
 (org-babel-do-load-languages
- 'org-babel-load-languages '((shell . t)))
+ 'org-babel-load-languages '((shell . t) (python . t)))
 
 ;; (setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "<img draggable="false" class="emoji" alt="✔" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2714.svg" scale="0"> DONE(d)")
 ;;                           (sequence "⚑ WAITING(w)" "|")

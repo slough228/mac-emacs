@@ -108,3 +108,14 @@
 
 (require 'org-issues-mode)
 (org-issues-update/monitor-issues) ;; Sets up a timer to automatically keep your local Issues up-to-date
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; this is a cool function.
+(defun arrayify (start end quote)
+  "Turn strings on newlines into a quoted, comma-separated one-liner."
+  (interactive "r\nMQuote: ")
+  (let ((insertion (mapconcat (lambda (x)(format "%s%s%s" quote x quote))
+                              (split-string (buffer-substring start end)) ",")))
+    (delete-region start end)
+    (insert insertion)))

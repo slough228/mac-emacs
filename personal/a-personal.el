@@ -1,24 +1,3 @@
-(setq backup-directory-alist `(("." . "~/.saves")))
-
-(require 'prelude-helm)
-(require 'prelude-company)
-(require 'prelude-helm-everywhere)
-;;(require 'prelude-go)
-;;(require 'prelude-c)
-(require 'prelude-python)
-(require 'prelude-shell)
-(require 'prelude-web)
-;;(require 'prelude-js)
-;;(require 'prelude-ruby)
-(require 'prelude-macos)
-;;(require 'prelude-clojure)
-
-;; yasnippet
-(require 'yasnippet)
-(yas-global-mode 1)
-
-(set-default-coding-systems 'utf-8)
-
 (defvar myPackagesA
   '(sr-speedbar
     elpy
@@ -46,12 +25,35 @@
     eclim
     company-emacs-eclim
     org-journal
+    elm-mode
     ))
 
 (mapc #'(lambda (package)
           (unless (package-installed-p package)
             (package-install package)))
       myPackagesA)
+
+
+(setq backup-directory-alist `(("." . "~/.saves")))
+
+(require 'prelude-helm)
+(require 'prelude-company)
+(require 'prelude-helm-everywhere)
+;;(require 'prelude-go)
+;;(require 'prelude-c)
+(require 'prelude-python)
+(require 'prelude-shell)
+(require 'prelude-web)
+;;(require 'prelude-js)
+;;(require 'prelude-ruby)
+(require 'prelude-macos)
+;;(require 'prelude-clojure)
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
+(set-default-coding-systems 'utf-8)
 
 
 ;; make tab complete files
@@ -104,10 +106,10 @@
 (setq backup-directory-alist '(("." . "~/saves")))
 
 ;; Emacs-org-issues
-(add-to-list 'load-path "~/local-emacs-packages/Emacs-org-issues-mode/src")
+;;(add-to-list 'load-path "~/local-emacs-packages/Emacs-org-issues-mode/src")
 
-(require 'org-issues-mode)
-(org-issues-update/monitor-issues) ;; Sets up a timer to automatically keep your local Issues up-to-date
+;;(require 'org-issues-mode)
+;;(org-issues-update/monitor-issues) ;; Sets up a timer to automatically keep your local Issues up-to-date
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
